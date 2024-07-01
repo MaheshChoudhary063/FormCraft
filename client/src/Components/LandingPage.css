@@ -1,0 +1,36 @@
+/* LandingPage.css */
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar-dark.bg-navy {
+    background-color: #003366;
+}
+
+.container .navbar-brand h4 {
+    margin: 0;
+}
+
+.container .navbar-brand span {
+    font-size: 24px;
+}
+
+footer.bg-dark {
+    margin-top: auto;
+}
+
+footer h6 {
+    margin: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
