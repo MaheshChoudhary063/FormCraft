@@ -56,15 +56,15 @@ FormCraft is a dynamic and robust web application developed using the MERN stack
    npm start
 
 # Project Structure
-  Client/
-      src/
-          components/
-          index.js
-  Server/
-      Controller/
-      models/
-      routes/
-      index.js
+  -  Client/
+     -   src/
+        -    components/
+         -   index.js
+  -  Server/
+         - Controller/
+        - models/
+        - routes/
+        - index.js
       
 ## Usage
   - Access the application through the provided endpoints.
