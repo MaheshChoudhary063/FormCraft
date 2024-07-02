@@ -34,25 +34,25 @@ FormCraft is a dynamic and robust web application developed using the MERN stack
    ```sh
    git clone https://github.com/MaheshChoudhary063/FormCraft.git
 2. Navigate to the project directory:
-   ...sh
+   ```sh
    cd client
 3. Install dependencies:
-    ...sh
+     ```sh
    npm install
 4. Start the application:
-   ...sh
+   ```sh
    npm start
 5. Install dependencies:
-    ...sh
+     ```sh
    npm install
 6. Navigate to project:
-    ...sh
+    ```sh
    cd server
 6. Install dependencies:
-    ...sh
+    ```sh
    npm install
 8. Start the application:
-   ...sh
+    ```sh
    npm start
 
 # Project Structure
