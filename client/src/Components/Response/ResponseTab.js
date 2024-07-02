@@ -7,6 +7,7 @@ function ResponseTab(props) {
   const [formData, setFormData] = useState({});
   const [responseData, setResponseData] = useState([]);
   const [questions, setQuestions] = useState([]);
+  const [userNames, setUserNames] = useState({});
 
   useEffect(() => {
     if (props.formData) {
@@ -18,6 +19,7 @@ function ResponseTab(props) {
       formService.getResponse(formId).then(
         (data) => {
           setResponseData(data);
+          fetchUserNames(data.map(d => d.userId));
         },
         (error) => {
           const resMessage =
@@ -32,8 +34,16 @@ function ResponseTab(props) {
     }
   }, [props.formId, props.formData]);
 
+  const fetchUserNames = (userIds) => {
+    const fetchedUserNames = userIds.reduce((acc, id) => {
+      acc[id] = `User_${id}`; 
+      return acc;
+    }, {});
+    setUserNames(fetchedUserNames);
+  };
+
   function getUserName(userId) {
-    return userId; // Replace with actual logic to get user name
+    return userNames[userId] || userId;
   }
 
   function getSelectedOption(qId, i, j) {

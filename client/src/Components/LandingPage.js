@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "../assests/image.jpg";
-import Excel from "../assests/excel.jpg";
+import Excel from "../assests/Excel-35.jpg";
 
 export default function LandingPage() {
   let navigate = useNavigate();

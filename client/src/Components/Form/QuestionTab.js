@@ -72,7 +72,7 @@ function QuestionsTab(props) {
   const copyQuestion = (i) => {
     const copiedQuestion = {
       questionText: questions[i].questionText,
-      options: questions[i].options.map((op) => ({ ...op })), // Ensure deep copy of options
+      options: questions[i].options.map((op) => ({ ...op })), 
       open: true,
     };
     setQuestions((prevQuestions) => [...prevQuestions, copiedQuestion]);

@@ -89,7 +89,6 @@ function EditForm() {
           >
             FormCraft
           </h2>
-          {/* <h1 className="flex-grow-1 mb-0">{formDetails.name}</h1> */}
           <button className="btn btn-primary me-3" onClick={sendForm}>
             Send
           </button>

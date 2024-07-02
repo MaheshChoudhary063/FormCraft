@@ -5,7 +5,7 @@ import EditForm from "./Components/Form/EditForm";
 import Login from "./Components/Login";
 import PrivateRoute from "./Components/Util/PrivateRoute";
 import UserView from "./Components/Responding/UserView";
-import RadioCheck from "./Components/Responding/RadioCheck";
+import ErrorPage from "./Components/Responding/ErrorPage";
 
 function Main() {
   return (
@@ -19,7 +19,7 @@ function Main() {
             element={<PrivateRoute element={<EditForm />} />}
           />
           <Route path="/s/:formId" element={<UserView />} />
-          <Route path="/radio" element={<RadioCheck />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
       </Router>
     </div>
