@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:3000/form/";
+const API_URL = "https://formcraft-2.onrender.com/form/";
 
 export default {
   getForms(userId) {

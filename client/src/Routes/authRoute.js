@@ -2,7 +2,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 // import jwt from 'jsonwebtoken'
 
-const API_URL = "http://localhost:3000/users/";
+const API_URL = "https://formcraft-2.onrender.com/users/";
 
 export default {
   isAuthenticated() {
