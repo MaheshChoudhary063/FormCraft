@@ -1,7 +1,9 @@
+require("dotenv").config();
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
-const ACCESS_TOKEN_SECRET = "mahesh";
+// const ACCESS_TOKEN_SECRET = "mahesh";
+const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
 
 const loginGet = async (req, res) => {
   try {

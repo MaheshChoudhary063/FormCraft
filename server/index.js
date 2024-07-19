@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
@@ -29,9 +30,11 @@ const dotenv = require("dotenv");
 // dotenv.config();
 const app = express();
 
-const PORT = process.env.PORT || 3000;
-const MONGO_URL =
-  "mongodb+srv://mahesh63choudhary:0g4vh2ezHuIywlbE@cluster0.6jczz57.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const PORT = process.env.PORT ;
+// const MONGO_URL =
+//   "mongodb+srv://mahesh63choudhary:0g4vh2ezHuIywlbE@cluster0.6jczz57.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+const URL = process.env.MONGODB_URL;
 
 app.use(express.static("public"));
 app.use(cors());
@@ -69,7 +72,7 @@ app.post("/", upload.single("myfile"), async (req, res) => {
 });
 
 mongoose
-  .connect(MONGO_URL)
+  .connect(URL)
   .then(() => {
     console.log("Database is connected");
   })
