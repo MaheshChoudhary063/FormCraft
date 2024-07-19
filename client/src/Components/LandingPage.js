@@ -157,7 +157,7 @@ export default function LandingPage() {
             you want.
           </p>
           <div className="text-center py-3">
-            <a href="https://port-folio-liard-eight.vercel.app/">
+            <a href="https://maheshchaudhary.vercel.app/">
               maheshchoudhary063
             </a>{" "}
             ©<a href="https://github.com/maheshchoudhary063"> GitHub</a>{" "}
